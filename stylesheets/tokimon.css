@@ -2,3 +2,18 @@
   padding: 0px;
   margin: 0px;
 }
+
+#header {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#search {
+  display: inline-flex;
+  justify-content: space-between;
+  margin:auto;
+}
+
+#addButton {
+}
