@@ -30,7 +30,8 @@
       </tr>
 
       <!-- enter the database entries here -->
-    <!--  <% dbRows.forEach((row) => { %>
+      <% if(dbRows != null)
+            dbRows.forEach((row) => { %>
 
       <tr>
         <td><%= row.name %></td>
@@ -47,7 +48,7 @@
       </tr>
 
       <% }); %>
-    -->
+
     </table>
   </body>
 </html>
