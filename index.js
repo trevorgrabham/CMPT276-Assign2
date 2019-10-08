@@ -5,7 +5,7 @@ var app = express();
 
 const { Pool } = require('pg');
 var pool;
-pool = new Pool({connectionString: process.env.DB_URL});
+pool = new Pool({connectionString: process.env.DATABASE_URL});
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
