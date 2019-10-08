@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000
 var app = express();
 
 const { Pool } = require('pg');
@@ -15,3 +15,4 @@ app.set('view engine','ejs');
 app.get('/', (req,res) => {
   res.render('tokimon');
 });
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
